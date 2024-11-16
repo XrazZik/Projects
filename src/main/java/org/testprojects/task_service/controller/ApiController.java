@@ -19,7 +19,7 @@ public class ApiController {
         this.apiService = apiService;
     }
 
-    @GetMapping(value = "/fetch-api-data")
+    @GetMapping(value = "/api/fetch-api-data")
     public ResponseEntity<?> fetchApiData() {
         apiService.fetchAndLogData();
         return new ResponseEntity<>(HttpStatus.OK);
